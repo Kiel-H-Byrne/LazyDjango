@@ -1,0 +1,208 @@
+/* Page */
+body {
+}
+
+h1 {
+text-align: center}
+#page {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+#wrapper {
+	margin: 0 auto 30px;
+	height: 100%;
+	width: 800px;
+	color: #555;
+	background-color: #fff;
+	border: 1px dotted #800}
+
+/* Header */
+
+#header {
+	clear: both;
+	width: inherit;
+	padding:0;
+	}
+#header table {
+width: 100%;}
+#logo {
+vertical-align: top;
+	}
+#logo img {
+	height: 150px;
+	margin: 0 11px;
+}
+#tagLine{
+	font-family: "Footlight MT Light";
+	font-size: 50px;
+	padding: 21px;
+}
+#tagLine a{
+color: inherit;
+text-decoration: none;}
+#tagLine a:visited{
+color: inherit;
+text-decoration: none;}
+
+
+#login {
+	vertical-align: top;		
+}
+
+#login a {
+text-decoration: none;
+font-size: 13px;
+list-style: none;
+color: #777;
+float: right;
+margin:2px;
+
+}	
+
+#login img {
+height: 20px;
+}
+
+#nav-menu{
+clear:both;
+width: 100%;
+height:50px;
+b/order: 1px solid red;
+}
+#nav {
+list-style:none;
+font-weight: bold;
+margin-bottom: 7px;
+float: left;
+width: 100%;
+position: relative;
+z-index: 5;
+
+}
+
+#nav li {
+float: left;
+margin-right: 30px;
+position: relative;
+
+}
+#nav a {
+display: table;
+padding: 5px;
+color: #955;
+text-decoration: none;
+width: auto;
+}
+
+#nav a:hover{
+color: #222;
+border-bottom: 2px dotted red;
+margin-bottom: -1px;
+}
+
+#nav ul {
+display: table-cell;
+list-style: none;
+position: absolute;
+visibility: hidden;
+}
+
+#nav ul li{
+padding-top: 1px;
+float: none;
+vi\sibility: hidden;
+}
+#nav ul a{
+	white-space: nowrap
+}
+#nav li:hover ul{
+left: 0;
+}
+#nav li:hover a{
+text-decoration: none;
+visibility: visible;
+}
+#nav li:hover ul a{
+text-decoration: none;
+}
+#nav li:hover ul li a:hover {
+background:#eee;
+}
+
+#nav li:hover li {
+position: relative;
+left: -30px;
+}
+
+/* Body */
+
+#content {
+	height: 300px;
+	width: inherit;
+	clear: both;
+	}
+
+#membership {
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	font-size: 13pt;
+	padding: 6px 10px;
+	width: 150px;
+}
+#membership a {
+	text-decoration: none;
+	color: #999;
+}
+
+#subscribe_button {
+	font-size: 14pt;
+	color: #333;
+	padding: 4px 8px;
+}
+
+.copyright {
+	font-size: 9pt;
+	color: #333;
+	margin: 40px 0px;
+}
+
+.form_message {
+	width: 400px;
+	padding: 10px;
+	margin: 15px auto;
+	display: none;
+}
+
+#info_message {
+	background-color: #f0f9ff;
+	border: 1px solid #eef;
+}
+
+#loading {
+	text-align: center;
+	margin: 10px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+}
+
+/* Footer */
+
+#footer {
+	font-size: 11px;
+	padding:1px;
+	position: fixed;
+	height: 18px;
+	width: inherit;
+	bottom: 0;
+	left: 0;
+	clear: both;
+	font-weight: 400;
+	}
+#footer a {
+text-decoration: none;
+color:#900}

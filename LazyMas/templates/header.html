@@ -1,0 +1,44 @@
+{% load static from staticfiles %}
+<div id="header">
+<table>
+<tr>
+<td id="logo">
+	    <a href="/home"><img alt="Mas Planner - LazyMas - Plan Together. Fete Together." src="../{% static 'img/logoBig.jpg' %}" title="Mas Planner - LazyMas - Plan Together. Fete Together." /></a>
+</td>
+<td><h2 id="tagLine"><a href="/home">Find .. Fix Up .. Fete! </a></h2></td>
+<td id="login">
+	    <a id="t_login_button" class="left" href="javascript:;">Login</a><br />
+	    <a class="left fb_login_button"><img alt="Connect using Facebook" src="../{% static 'img/facebook-icon.png' %}" title="Connect using Facebook" /></a>
+	    <a class="left g_login_button"><img alt="Connect using Google +" src="../{% static 'img/google-icon.png' %}" title="Connect using Google +" /></a><br />
+	    <a class="" href="#">Register</a>
+</td>
+</tr>
+</table>
+<table>
+<tr><td id="nav-menu">
+	  <ul id="nav" class="topMenu">
+	    <li><a href="/dashboard">Dashboard</a>
+	    <li><a href="/booking">Booking</a>
+	    	<ul class="subMenu">
+	    		<li class="subItem"><a href="/booking/flights">Flights</a></li>
+	    		<li class="subItem"><a href="/booking/rooms">Rooms</a></li>
+	    		<li class="subItem"><a href="/booking/costumes">Costumes</a></li>
+	    		<li class="subItem"><a href="/booking/fetes">Fetes</a></li>
+	    		<li class="subItem"><a href="/booking/packages">LazyMas Packages</a></li>
+	    	</ul>
+	    </li>		    	
+	    <li class="topItem"><a href="/faq">FAQ</a>
+			<ul class="subMenu">
+	    		<li class="subItem"><a href="/faq/about">About Trinidad Carnival</a></li>
+	    		<li class="subItem"><a href="/faq/info">Guides & Info</a></li>
+	    		<li class="subItem"><a href="/faq/terms">Common Terms</a></li>
+	    	</ul>
+	   	</li>
+	    <li class="topItem"><a href="/contact">Contact</a></li>
+	    <li class="topItem"><a href="/swag">LazyMas Swag</a></li>	    	    
+	    <li class="topItem"><a target="_blank" href="/blog">Blog</a></li>
+	  </ul>
+	</td>
+</tr>
+</table>
+</div>

@@ -1,0 +1,83 @@
+{% extends "_base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+Welcome to LazyMas.com
+{% endblock %}
+
+{% block scripts %}
+{{block.super}}
+	<script language="Javascript" type="text/javascript" src="{% static 'js/jquery.lwtCountdown-1.0.js' %}"></script>
+{% endblock %}
+
+{% block style %}
+	{{block.super}}
+	<link rel="Stylesheet" type="text/css" href="{% static 'css/countDown.css' %}"></link>
+{% endblock %}
+
+{% block page %}
+{% block content %}
+	<div id="container">
+		<div id="back"> </div>
+		<h1>Trinidad Carnival begins in:</h1>
+
+		<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<span class="dash_title">weeks</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+		</div>
+
+		<div class="dev_comment">
+			<h2 class="subtitle">Are <span class="bold">you</span> ready<span class="bold">?</span></h2>
+			<a href="home" class=""><span class="bold">Get</span> Ready<span class="bold">!</span></a>	
+		</div>
+	</div>		
+
+{% endblock %}
+		
+{% block endScripts %}
+	<script language="javascript" type="text/javascript">
+	    jQuery(document).ready(function() {
+	    	$('#countdown_dashboard').countDown({
+	    		targetDate: {
+	    			'day': 		11,
+	    			'month': 	2,
+	    			'year': 	2013,
+	    			'hour': 	4,
+	    			'min': 		0,
+	    			'sec': 		0
+	    		}
+	    	});
+	    	
+	    });
+	</script>
+{% endblock %}
+
+{% endblock %}

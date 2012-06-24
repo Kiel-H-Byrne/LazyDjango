@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+LazyMas.com - Find | Fix Up | Fete!
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block style %}
+<link rel="Stylesheet" type="text/css" href="/{% static 'css/home.css' %}"></link>
+
+{% endblock %}
+
+{% block page %}
+<div id="page">
+	<div id="wrapper">
+		{% block header %}
+			{% include "header.html" %}
+		{% endblock %}
+		
+		{% block content %}{% endblock %}
+		
+		{% block footer %}
+			{% include "footer.html" %}		
+		{% endblock %}
+		
+	</div>
+</div>
+{% endblock %}

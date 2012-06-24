@@ -1,0 +1,13 @@
+<ul>
+{% for city in cities %}
+    <li>{{ city.country }}
+    <ul>
+        {% for c in cities %}
+          <li>{{ c.name }}: {{ c.population }}</li>
+        {% empty %}
+          <li>Sorry, none</li>
+        {% endfor %}
+    </ul>
+    </li>
+{% endfor %}
+</ul>
