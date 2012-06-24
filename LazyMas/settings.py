@@ -1,5 +1,7 @@
 # Django settings for LazyMas project.
-import os, os.path, sys
+import os
+import os.path
+import sys
 
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
@@ -53,7 +55,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = 'media/'
+MEDIA_URL = '../media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -65,11 +67,11 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 #Serves the dev staticfiles
-STATIC_URL = 'static/'
+STATIC_URL = 'lib/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-#	'Booking/static',
+	'Lazymas/static',
 	# Actual location of dev static files
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
