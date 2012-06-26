@@ -1,8 +1,8 @@
 <ul>
-{% for city in cities %}
+{% for city in citys %}
     <li>{{ city.country }}
     <ul>
-        {% for c in cities %}
+        {% for c in citys	 %}
           <li>{{ c.name }}: {{ c.population }}</li>
         {% empty %}
           <li>Sorry, none</li>

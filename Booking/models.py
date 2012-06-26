@@ -1,5 +1,6 @@
 from django.db import models
 
+
 BAND_CHOICES = (
 	('YUMA', 'Yuma'),
 )
@@ -8,6 +9,12 @@ SECTION_CHOICES = (
 	('GODS_OF_WAR', 'Gods of War'),
 	('ANGRY_BIRDS', 'Angry Birds'),	
 )
+
+JOUVERT_CHOICES = (
+	('INSOMNIACS', 'Insomniacs'),
+	('YELLOW_ANTS', 'Yellow Ants'),	
+)
+
 
 class Flight(models.Model):
 	name=models.CharField(max_length=20)

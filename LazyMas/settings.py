@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 #APPS
     'Booking',
+    'Register',
 
 )
 

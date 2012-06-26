@@ -11,7 +11,7 @@ def splash(request):
 def home(request):
 	return render_to_response('homePage.html')
 	
-def sandbox(request,):
+def sandbox(request):
 	cities = [
     {'name': 'Mumbai', 'population': '19,000,000', 'country': 'India'},
     {'name': 'Calcutta', 'population': '15,000,000', 'country': 'India'},
@@ -19,6 +19,4 @@ def sandbox(request,):
     {'name': 'Chicago', 'population': '7,000,000', 'country': 'USA'},
     {'name': 'Tokyo', 'population': '33,000,000', 'country': 'Japan'},
 	]
-	t = loader.get_template('sandbox.html')
-	c = RequestContext(request)
-	return HttpResponse(t.render(c))
+	return render_to_response('sandBox.html', {'citys': cities} )

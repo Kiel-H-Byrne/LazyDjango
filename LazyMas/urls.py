@@ -20,7 +20,7 @@ urlpatterns = patterns('LazyMas.views',
 
 urlpatterns += patterns('LazyMas.views',
 #APPS
-#    url(r'^register/', include('Register.urls')),
+    url(r'^register/', include('Register.urls')),
 #    url(r'^login/', include('Login.urls')),
 #    url(r'^dashboard/', include('Dashboard.urls')),
     url(r'^booking/$', include('Booking.urls')),
