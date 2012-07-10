@@ -1,5 +1,0 @@
-BeautifulSoup==3.2.1
-beautifulsoup4==4.1.0
-html5lib==0.95
-lxml==2.3.4
-wsgiref==0.1.2
