@@ -1,0 +1,19 @@
+{% extends "booking.html" %}
+{% load static from staticfiles %}
+
+{% block content %}
+<div id="flight_table">
+{% for day in days %}
+       <li>{{day.text}}</li>
+{% endfor %}  
+ 
+{% for date in dates %}
+       <li>{{date.text}}</li>
+{% endfor %}   
+
+{% for price in prices %}
+        <li>{{price.text}}</li>
+{% endfor %}
+
+</div>
+{% endblock %}
