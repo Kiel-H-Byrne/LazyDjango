@@ -13,12 +13,13 @@ html_doc='none'
 
 def get_html():
 	zURL = 'https://caribbean.sita.aero/itd/itd/DoAirSearch'
-	zARGS='_originSelected=Airport.JFK&'
+	zARGS='_originSelected=Airport.LAG&'
 	zARGS+='_destinationSelected=Airport.POS&'
 	zARGS+='_tripType=Return&'
 	zARGS+='_depdateeu=08/02/2013%20&'
 	zARGS+='_retdateeu=18/02/2013%20&'
-	zARGS+='_classType=Economy&_dateWindow=P3D&'
+	zARGS+='_classType=Economy&'
+	zARGS+='_dateWindow=P3D&'
 	zARGS+='_searchType=DatePriceLed&'
 	zARGS+='requestor=AirSimpleReqsPage&'
 	zARGS+='_channelLocale=en&'
@@ -40,8 +41,9 @@ def get_ca_price():
     global days, dates, prices, title, ca_html
     ca_html = BS(html_doc)
     title = ca_html.title
-    days = ca_html.select(".headerrow")
-    infos = ca_html.select(".datarow")
+    days = ca_html.select(".caldow")
+    dates = ca_html.select(".caldate")
+    prices = ca_html.select(".calprice")
     Tag.do_not_call_in_templates = True
 
 #if __name__ == '__main__':
@@ -56,4 +58,4 @@ def get_ca_price():
 def flights(request):
 	get_html()
 	get_ca_price()
-	return render_to_response('flights.html',{'days':days,'infos':infos})
+	return render_to_response('flights.html',{'days':days, 'dates':dates, 'prices':prices})
