@@ -3,17 +3,22 @@
 
 {% block content %}
 <div id="flight_table">
+<table>
+<tr>
 {% for day in days %}
-       <li>{{day.text}}</li>
+       <td><h3>{{day.text}}</h3></td>
 {% endfor %}  
- 
+</tr>
+<tr>
 {% for date in dates %}
-       <li>{{date.text}}</li>
+       <td>{{date.text}}</td>
 {% endfor %}   
-
+</tr>
+<tr>
 {% for price in prices %}
-        <li>{{price.text}}</li>
+        <td>{{price.text}}</td>
 {% endfor %}
-
+</tr>
+</table>
 </div>
 {% endblock %}
